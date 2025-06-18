@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: shadowrocket-vpn
+    env: docker
+    region: frankfurt
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: SSR_PORT
+        value: "443"
+      - key: SSR_PASSWORD
+        value: "Artem31+"
+      - key: SSR_METHOD
+        value: "chacha20-ietf"
+      - key: SSR_OBFS
+        value: "http_post_compatible"
