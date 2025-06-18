@@ -2,7 +2,7 @@ services:
   - type: web
     name: shadowrocket-vpn
     env: docker
-    region: frankfurt
+    region: oregon
     plan: free
     dockerfilePath: ./Dockerfile
     autoDeploy: true
